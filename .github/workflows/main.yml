@@ -69,7 +69,7 @@ jobs:
           script: |
             pwd
             ls -al
-            cd fastapi/actions-runner-fastapi
+            cd actions-runner-fastapi
             pwd
             
             echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
